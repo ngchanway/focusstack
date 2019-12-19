@@ -133,7 +133,7 @@ def focus_stack(unimages):
         laps.append(doLap(cv2.cvtColor(images[i],cv2.COLOR_BGR2GRAY)))
 
     laps = np.asarray(laps)
-    print "Shape of array of laplacians = {}".format(laps.shape)
+    print("Shape of array of laplacians = {}".format(laps.shape))
 
     output = np.zeros(shape=images[0].shape, dtype=images[0].dtype)
 
