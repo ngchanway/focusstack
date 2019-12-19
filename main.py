@@ -27,7 +27,7 @@ def stackHDRs(image_files):
 
 
 if __name__ == "__main__":
-    image_files = sorted(os.listdir("input"))
+    image_files = sorted(os.listdir("Input"))
     for img in image_files:
         if img.split(".")[-1].lower() not in ["jpg", "jpeg", "png"]:
             image_files.remove(img)
