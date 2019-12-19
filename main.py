@@ -6,7 +6,7 @@ import FocusStack
     Focus stack driver program
 
     This program looks for a series of files of type .jpg, .jpeg, or .png
-    in a subdirectory "input" and then merges them together using the
+    in a subdirectory "Input" and then merges them together using the
     FocusStack module.  The output is put in the file merged.png
 
 
@@ -20,7 +20,7 @@ def stackHDRs(image_files):
     focusimages = []
     for img in image_files:
         print("Reading in file {}".format(img))
-        focusimages.append(cv2.imread("input/{}".format(img)))
+        focusimages.append(cv2.imread("Input/{}".format(img)))
 
     merged = FocusStack.focus_stack(focusimages)
     cv2.imwrite("merged.png", merged)
